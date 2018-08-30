@@ -9,10 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBAction func nilAction(_ sender: UIButton) {
+        
+       var vc1: VC1? = VC1()
+        vc1 = nil
+    
+    }
+    
+    var delegate: SendDataDelegate?
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,4 +32,41 @@ class ViewController: UIViewController {
 
 
 }
+
+class VC1: SendDataDelegate {
+    
+    //lazy var
+//    var sendingVC: ViewController = {
+//        let vc = ViewController()
+//        //vc.delegate = self // self refers to ReceivingVC object
+//        return vc
+//    }()
+    
+    var vc2 = VC2()
+    init() {
+        print("VC1生成")
+    }
+    
+    deinit {
+        print("VC1 deinit")
+    }
+}
+
+class VC2: SendDataDelegate {
+    
+    var vc1 = VC1()
+    weak var delegate: SendDataDelegate?
+    
+    init() {
+        print("VC2 生成")
+    }
+    
+    deinit {
+        print("VC2 deinit")
+    }
+}
+
+
+protocol SendDataDelegate: class {}
+
 
