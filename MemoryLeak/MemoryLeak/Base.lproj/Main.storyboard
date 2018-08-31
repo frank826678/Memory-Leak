@@ -18,12 +18,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBt-dg-PqE">
-                                <rect key="frame" x="116" y="115" width="102" height="66"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1f-a4-QNr">
+                                <rect key="frame" x="103" y="120" width="146" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="讓他 nil"/>
+                                <color key="backgroundColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="delegate-VC2 nil"/>
                                 <connections>
-                                    <action selector="nilAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GhU-Jn-43R"/>
+                                    <action selector="nilAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="64D-FR-0lK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4T8-Qc-qtB">
+                                <rect key="frame" x="103" y="318" width="157" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="closure-nil"/>
+                                <connections>
+                                    <action selector="closuurNilAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vF6-Ae-dqx"/>
                                 </connections>
                             </button>
                         </subviews>
